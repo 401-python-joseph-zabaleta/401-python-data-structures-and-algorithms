@@ -13,7 +13,7 @@ Write a function called `reverseArray` which takes an array as an argument. With
 
 
 ## Approach & Effciency  
-Still learning about the Big O Notation. In this challenge I am not really sure what Big O is really about but I utilized only one loop. I only ever needed to touch each index once and the list was mutated in place.
+Still learning about the Big O Notation. In this challenge I am not really sure what Big O is really about but I utilized only one loop. I only ever needed to touch each index once and the list was mutated in place..
 
 
 ## Solution  
