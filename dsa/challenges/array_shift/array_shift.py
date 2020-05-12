@@ -1,5 +1,8 @@
-## Function  
+## Function
 def insertShiftArray(arr, num):
+    """
+    This function takes in two parameters: a list, and an integer. insertShiftArray will place the integer at the middle index of the list provided.
+    """
     answerArr = []
     middle = 0
     # No math methods, if/else to determine odd or even to find middle index
@@ -7,7 +10,7 @@ def insertShiftArray(arr, num):
         middle = len(arr)/2
     else:
         middle = (len(arr)/2 + 0.5)
-    
+
     #Loop through originally arr length + 1 more iteration for our addition.
     for i in range(len(arr)+1):
         if i < middle:
@@ -21,9 +24,3 @@ def insertShiftArray(arr, num):
             #append second half
             answerArr.append(arr[i])
     return(answerArr)
-
-# First Input
-assert insertShiftArray([2,4,6,8], 5) == [2,4,5,6,8]
-
-# Second Input
-assert insertShiftArray([4,8,15,23,42], 16) == [4,8,15,16,23,42]
