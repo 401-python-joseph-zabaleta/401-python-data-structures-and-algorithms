@@ -2,7 +2,7 @@
 name = "data-structures-and-algorithms-python"
 version = "0.1.0"
 description = ""
-authors = ["JB-Tellez <jb.tellez@gmail.com>"]
+authors = ["joseph-zabaleta <joseph.l.zabaleta@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"

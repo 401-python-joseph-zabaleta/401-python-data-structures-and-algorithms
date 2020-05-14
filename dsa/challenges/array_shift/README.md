@@ -11,7 +11,7 @@ Write a function called `insertShiftArray` which takes in an array and the value
 |`[4,8,15,23,42], 16`|`[4,8,15,16,23,42]`|
 
 
-## Approach & Effciency
+## Approach & Efficiency
 I decided to not use math methods or library to determine the exact middle of an inputted list. To make this more efficient we can use that to remove the if/else from the start of my function. Using a for i in range loop, we are setting an exact amount of iterations and for each iteration this function was appending items to the answer array. Last it was returned as a final product.
 
 
