@@ -8,6 +8,7 @@
 #             return i
 #     return -1
 
+
 def BinarySearch(arr, key):
     """
     BinarySearch takes in two parameters: list of integers, and a search integer.
@@ -16,7 +17,7 @@ def BinarySearch(arr, key):
     if len(arr) == 0:
         return -1
 
-    if arr[len(arr)-1] < key:
+    if arr[len(arr) - 1] < key:
         return -1
     else:
         start_idx = 0
