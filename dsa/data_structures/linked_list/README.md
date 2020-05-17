@@ -11,7 +11,7 @@
 - Be sure to follow your language/frameworks standard naming conventions.
 
 ## Approach & Efficiency
-
+This code challenge is a bit different than others. This one we had a lot of reading and good lecture about Big O and Linked List. I followed the instructions from top to bottom. Creating the node and establishing a way to add more nodes to the linked list. The most complex piece of this challenge was to understand the reassigning of head, and ensuring each node knew of its value plus its next value. Insert came out to an O(1) efficiciency. Includes on the other hand is an O(n) as it is using a while loop, and may not find anything.
 
 ## Solution
-![White Board Image]()
+![White Board Image](../../../assets/linked_list.png)

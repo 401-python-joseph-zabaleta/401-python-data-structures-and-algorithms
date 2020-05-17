@@ -3,21 +3,29 @@ class LinkedList:
         self.head = None
 
     def __str__(self):
-
-        res = ""
-
+        output = ""
         current = self.head
-
         while current:
-            res += "{ " + str(current.value) + " } -> "
+            output += f"{{ {str(current.value)} }} -> "
             current = current.next
-        return res + "NULL"
+        return output + "NULL"
 
     def __repr__(self):
         return f"LinkedList: {self.head}"
 
     def insert(self, value):
+        """Function creates a new node and adds it to the linked list"""
         self.head = Node(value, self.head)
+
+    def includes(self, value):
+        """Returns whether or not a value is within the linked list. Boolean output"""
+        current = self.head
+
+        while current:
+            if current.value == value:
+                return True
+            current = current.next
+        return False
 
 
 class Node:
