@@ -35,7 +35,7 @@ class LinkedList:
 
         while current:
             if current.next == None:
-                return "Value not found."
+                raise ValueError("Value not found.")
             if current.value == value:
                 current.next = Node(newVal, current.next)
                 break

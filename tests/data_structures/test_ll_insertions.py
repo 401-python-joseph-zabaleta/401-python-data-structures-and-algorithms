@@ -36,70 +36,46 @@ def test_LinkedList_insert():
     assert ll.head.value == "b"
     assert ll.head.next.value == "a"
 
-def test_LinkedList_insert_before():
-    ll = LinkedList()
-    ll.insert("a")
-    ll.insert("b")
-    ll.insert("c")
-    ll.insertBefore("a", "d")
-    actual = str(ll)
+
+def test_LinkedList_insert_before(ll_list):
+    ll_list.insertBefore("a", "d")
+    actual = str(ll_list)
     expected = "{ c } -> { b } -> { d } -> { a } -> NULL"
     assert actual == expected
 
-def test_LinkedList_insert_before_false():
-    ll = LinkedList()
-    ll.insert("a")
-    ll.insert("b")
-    ll.insert("c")
-    actual = ll.insertBefore("f", "d")
-    expected = "Value not found."
-    assert actual == expected
 
-def test_LinkedList_insert_after():
-    ll = LinkedList()
-    ll.insert("a")
-    ll.insert("b")
-    ll.insert("c")
-    ll.insertAfter("b", "d")
-    actual = str(ll)
+def test_LinkedList_insert_before_false(ll_list):
+    with pytest.raises(ValueError):
+        ll_list.insertAfter("f", "d")
+
+
+def test_LinkedList_insert_after(ll_list):
+    ll_list.insertAfter("b", "d")
+    actual = str(ll_list)
     expected = "{ c } -> { b } -> { d } -> { a } -> NULL"
     assert actual == expected
 
-def test_LinkedList_insert_after_false():
-    ll = LinkedList()
-    ll.insert("a")
-    ll.insert("b")
-    ll.insert("c")
-    actual = ll.insertAfter("f", "d")
-    expected = "Value not found."
-    assert actual == expected
 
-def test_LinkedList_includes_true():
-    ll = LinkedList()
-    ll.insert("a")
-    ll.insert("b")
-    ll.insert("c")
-    actual = ll.includes("c")
+def test_LinkedList_insert_Exception(ll_list):
+    with pytest.raises(ValueError):
+        ll_list.insertAfter("f", "d")
+
+
+def test_LinkedList_includes_true(ll_list):
+    actual = ll_list.includes("c")
     expected = True
     assert actual == expected
 
 
-def test_LinkedList_includes_false():
-    ll = LinkedList()
-    ll.insert("a")
-    ll.insert("b")
-    ll.insert("c")
-    actual = ll.includes("d")
+def test_LinkedList_includes_false(ll_list):
+    actual = ll_list.includes("d")
     expected = False
     assert actual == expected
 
-def test_LinkedList_append():
-    ll = LinkedList()
-    ll.insert("a")
-    ll.insert("b")
-    ll.insert("c")
-    ll.append("d")
-    actual = str(ll)
+
+def test_LinkedList_append(ll_list):
+    ll_list.append("d")
+    actual = str(ll_list)
     expected = "{ c } -> { b } -> { a } -> { d } -> NULL"
     assert actual == expected
 
@@ -110,9 +86,10 @@ def test_node_exception():
 
 
 @pytest.fixture
-def prep():
+def ll_list():
     """Sets up a linked list instance along with adds a few nodes for testing"""
     ll = LinkedList()
     ll.insert("a")
     ll.insert("b")
     ll.insert("c")
+    return ll
