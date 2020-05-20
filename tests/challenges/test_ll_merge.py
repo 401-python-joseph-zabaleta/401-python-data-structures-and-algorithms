@@ -1,5 +1,5 @@
 import pytest
-from dsa.data_structures.ll_kth_from_end.ll_kth_from_end import LinkedList, Node
+from dsa.challenges.ll_merge.ll_merge import LinkedList, Node, merge_list
 
 
 def test_LinkedList_instance():
@@ -101,6 +101,7 @@ def test_LinkedList_kth_from_end_2():
     expected = 3
     assert actual == expected
 
+
 def test_LinkedList_kth_from_end_same_length():
     ll = LinkedList()
     ll.insert(2)
@@ -108,6 +109,7 @@ def test_LinkedList_kth_from_end_same_length():
     actual = ll.kth_from_end(2)
     expected = 8
     assert actual == expected
+
 
 def test_LinkedList_kth_from_end_IndexError_Exception():
     ll = LinkedList()
@@ -117,6 +119,7 @@ def test_LinkedList_kth_from_end_IndexError_Exception():
     ll.insert(1)
     with pytest.raises(IndexError):
         ll.kth_from_end(6)
+
 
 def test_LinkedList_kth_from_end_ValueError_Exception():
     ll = LinkedList()
@@ -133,6 +136,68 @@ def test_node_exception():
         Node("Test", "This must be a node not a string")
 
 
+def test_merge_list_list1_none():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list2.insert("c")
+    list2.insert("b")
+    list2.insert("a")
+    actual = str(merge_list(list1, list2))
+    expected = "{ a } -> { b } -> { c } -> NULL"
+    assert actual == expected
+
+
+def test_merge_list_list2_none():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list1.insert("c")
+    list1.insert("b")
+    list1.insert("a")
+    actual = str(merge_list(list1, list2))
+    expected = "{ a } -> { b } -> { c } -> NULL"
+    assert actual == expected
+
+
+def test_merge_list_equal_lists():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list1.insert("e")
+    list1.insert("c")
+    list1.insert("a")
+    list2.insert("f")
+    list2.insert("d")
+    list2.insert("b")
+    actual = str(merge_list(list1, list2))
+    expected = "{ a } -> { b } -> { c } -> { d } -> { e } -> { f } -> NULL"
+    assert actual == expected
+
+
+def test_merge_list_list1_shorter():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list1.insert("3")
+    list1.insert("1")
+    list2.insert("4")
+    list2.insert("9")
+    list2.insert("5")
+    actual = str(merge_list(list1, list2))
+    expected = "{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 4 } -> NULL"
+    assert actual == expected
+
+
+def test_merge_list_list1_longer():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list1.insert("3")
+    list1.insert("1")
+    list1.insert("4")
+    list2.insert("9")
+    list2.insert("5")
+    actual = str(merge_list(list1, list2))
+    expected = "{ 4 } -> { 5 } -> { 1 } -> { 9 } -> { 3 } -> NULL"
+    assert actual == expected
+
+
 @pytest.fixture
 def ll_list():
     """Sets up a linked list instance along with adds a few nodes for testing"""
@@ -141,3 +206,12 @@ def ll_list():
     ll.insert("b")
     ll.insert("c")
     return ll
+
+
+@pytest.fixture
+def ll_list_merge():
+    """Sets up two linked list instances along with some nodes for testing"""
+    list1 = LinkedList()
+    list1.insert("c")
+    list1.insert("b")
+    list1.insert("a")
