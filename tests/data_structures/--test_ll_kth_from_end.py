@@ -90,6 +90,27 @@ def test_LinkedList_kth_from_end_0():
     expected = 2
     assert actual == expected
 
+def test_LinkedList_kth_from_end_resubmission_0():
+    ll = LinkedList()
+    ll.insert(5)
+    ll.insert(4)
+    ll.insert(3)
+    ll.insert(2)
+    ll.insert(1)
+    actual = ll.kth_from_end(0)
+    expected = 5
+    assert actual == expected
+
+def test_LinkedList_kth_from_end_resubmission_1():
+    ll = LinkedList()
+    ll.insert(5)
+    ll.insert(4)
+    ll.insert(3)
+    ll.insert(2)
+    ll.insert(1)
+    actual = ll.kth_from_end(1)
+    expected = 4
+    assert actual == expected
 
 def test_LinkedList_kth_from_end_2():
     ll = LinkedList()
