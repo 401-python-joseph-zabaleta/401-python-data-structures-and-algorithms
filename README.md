@@ -9,3 +9,5 @@ This is a collection of all my challenges for Python 401.
 - [Code Challenge 04: Matrix-Sum](dsa/challenges/matrix_sum/README.md)
 - [Code Challenge 05: Linked-List](dsa/data_structures/linked_list/README.md)
 - [Code Challenge 06: Linked-List Insertions](dsa/data_structures/ll_insertions/README.md)
+- [Code Challenge 07: Linked-List Kth from End](dsa/data_structures/ll_kth_from_end/README.md)
+- [Code Challenge 08: Linked List Merge](dsa/challenges/ll_merge/README.md)
