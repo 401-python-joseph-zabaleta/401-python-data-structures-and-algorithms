@@ -39,10 +39,11 @@ def test_Stack_push_multiple_items():
 
 
 def test_Stack_pop_empty_Exception():
-    my_stack = Stack()
-    actual = my_stack.pop()
-    expected = "Can't pop item from an empty stack"
-    assert actual == expected
+    with pytest.raises(AttributeError):
+        my_stack = Stack()
+        actual = my_stack.pop()
+        expected = "Can't pop item from an empty stack"
+        assert actual == expected
 
 
 def test_Stack_pop_one_item():
@@ -67,10 +68,11 @@ def test_Stack_pop_multiple_items():
 
 
 def test_Stack_peek_empty_Exception():
-    my_stack = Stack()
-    actual = my_stack.peek()
-    expected = "Can't peek top from an empty stack"
-    assert actual == expected
+    with pytest.raises(AttributeError):
+        my_stack = Stack()
+        actual = my_stack.peek()
+        expected = "Can't peek top from an empty stack"
+        assert actual == expected
 
 
 def test_Stack_peek_top():
@@ -153,10 +155,11 @@ def test_Queue_peek_front():
 
 
 def test_Queue_peek_empty_Exception():
-    my_queue = Queue()
-    actual = my_queue.peek()
-    expected = "Can't peek front from an empty queue"
-    assert actual == expected
+    with pytest.raises(AttributeError):
+        my_queue = Queue()
+        actual = my_queue.peek()
+        expected = "Can't peek front from an empty queue"
+        assert actual == expected
 
 
 def test_Queue_isEmpty_empty():

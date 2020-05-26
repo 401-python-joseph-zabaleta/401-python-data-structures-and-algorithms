@@ -109,20 +109,29 @@ class Stack:
 
     def pop(self):
         """Takes no arguments, removes the node from the top of the stack, and returns the node's value."""
-        try:
-            popped_node = self.top
-            self.top = self.top.next
-            popped_node.next = None
-            return popped_node.value
-        except AttributeError:
-            return "Can't pop item from an empty stack"
+        if not self.top:
+            raise AttributeError("Can't pop item from an empty stack")
+        popped_node = self.top
+        self.top = self.top.next
+        popped_node.next = None
+        return popped_node.value
+        # try:
+        #     popped_node = self.top
+        #     self.top = self.top.next
+        #     popped_node.next = None
+        #     return popped_node.value
+        # except AttributeError:
+        #     return "Can't pop item from an empty stack"
 
     def peek(self):
         """Takes no arguments and returns the value of the node located on top of the stack, without removing it from the stack."""
-        try:
-            return self.top.value
-        except AttributeError:
-            return "Can't peek top from an empty stack"
+        if not self.top:
+            raise AttributeError("Can't peek top from an empty stack")
+        return self.top.value
+        # try:
+        #     return self.top.value
+        # except AttributeError:
+        #     return "Can't peek top from an empty stack"
 
     def is_empty(self):
         """Takes no arguments, and returns a boolean indicating whether or not the stack is empty."""
@@ -145,20 +154,30 @@ class Queue:
 
     def dequeue(self):
         """Takes no arguments, remove the node from the front of the queue, and returns the node's value."""
-        try:
-            removed = self.front
-            self.front = self.front.next
-            return removed.value
-        except AttributeError:
-            return "Can't dequeue from an empty queue"
+        if not self.front:
+            raise AttributeError("Can't dequeue from an empty queue")
+
+        removed = self.front
+        self.front = self.front.next
+        return removed.value
+        # try:
+        #     removed = self.front
+        #     self.front = self.front.next
+        #     return removed.value
+        # except AttributeError:
+        #     return "Can't dequeue from an empty queue"
 
     def peek(self):
         """Takes no arguments and returns the value of the node located in the front of the queue, without removing it from the queue."""
-        try:
-            return self.front.value
-        except AttributeError:
-            return "Can't peek front from an empty queue"
+        if not self.front:
+            raise AttributeError("Can't peek from an empty queue")
+        return self.front.value
+
+        # try:
+        #     return self.front.value
+        # except AttributeError:
+        #     return "Can't peek front from an empty queue"
 
     def is_empty(self):
         """Takes no arguments and returns a boolean indicating whether or not the queue is empty."""
-        return not bool(self.rear)
+        return not bool(self.front)
