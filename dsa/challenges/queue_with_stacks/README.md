@@ -25,8 +25,7 @@ The `Stack` instances have only `push`, `pop`, and `peek` methods. You should us
 
 ---
 ## Approach & Efficiency
-When it comes to working with matrixs the first that populates in my brain is nested for loops. Currently this is my only approach to solving such a problem. The outer loop
-controls which array or row you are working on. While the inner loop will go through that array or row and count each index.
+This is not the best solution for managing a queue. Utilizing two stacks to "slinking" between in order to maintain the First-In-First-Out is a Big-O Nightmare. I had to utilize a while loop, to iterate over the first stack to retreive the bottom, or first out node. Then reverse the process to return the stack back to normal so any additional items added to the queue were after those already placed in queue.
 
 ## Solution
 ![White Board Image](../../../assets/queue_with_stacks.png)
