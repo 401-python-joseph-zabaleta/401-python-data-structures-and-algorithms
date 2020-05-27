@@ -11,3 +11,5 @@ This is a collection of all my challenges for Python 401.
 - [Code Challenge 06: Linked-List Insertions](dsa/data_structures/ll_insertions/README.md)
 - [Code Challenge 07: Linked-List Kth from End](dsa/data_structures/ll_kth_from_end/README.md)
 - [Code Challenge 08: Linked List Merge](dsa/challenges/ll_merge/README.md)
+- Challenge 09: Mock Interview (White board exercise)
+- [Code Challenge 10: Stacks and Queues](dsa/data_structures/stack_and_queues/README.md)
