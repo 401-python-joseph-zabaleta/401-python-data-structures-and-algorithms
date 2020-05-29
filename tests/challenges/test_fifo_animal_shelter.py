@@ -52,7 +52,6 @@ def test_AnimalShelter_dequeue_pref_not_catOrDog():
     expected = None
     assert actual == expected
 
-@pytest.mark.skip()
 def test_AnimalShelter_dequeue_pref_dog():
     shelter = AnimalShelter()
     cheeto = Cat('Cheeto')
@@ -70,5 +69,5 @@ def test_PseudoQueue_enqueue_cat():
     shelter.enqueue(cheeto)
     shelter.enqueue(oliver)
     actual = shelter.storage1.peek().kind
-    expected = 'cat'
+    expected = 'dog'
     assert actual == expected
