@@ -99,3 +99,29 @@ def test_BST_post_order_2():
     actual = bst.post_order()
     expected = [45, 40, 55, 60, 50]
     assert actual == expected
+
+def test_BST_contains_True():
+    bst = BinarySearchTree()
+    bst.add(85)
+    bst.add(70)
+    bst.add(75)
+    bst.add(45)
+    bst.add(100)
+    bst.add(90)
+    bst.add(110)
+    actual = bst.contains(45)
+    expected = True
+    assert actual == expected
+
+def test_BST_contains_False():
+    bst = BinarySearchTree()
+    bst.add(85)
+    bst.add(70)
+    bst.add(75)
+    bst.add(45)
+    bst.add(100)
+    bst.add(90)
+    bst.add(110)
+    actual = bst.contains(200)
+    expected = False
+    assert actual == expected

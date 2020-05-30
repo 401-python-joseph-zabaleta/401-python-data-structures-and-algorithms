@@ -13,7 +13,7 @@ This challenge address the datastruce of trees. We will be working with Binary T
 
 - [x] Create a BinarySearchTree class:
     - [x] Define a method named `add` that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
-    - [ ] Define a method named `contains` that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+    - [x] Define a method named `contains` that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
 ### Unit Tests
 1. [x] Can successfully instantiate an empty tree.
@@ -25,13 +25,20 @@ This challenge address the datastruce of trees. We will be working with Binary T
 
 
 ## Approach & Efficiency
+All the functions within super class, pre, post, and in order functions are all utilzing recursion. This is not terrible as it will only invoke that function once per node. This gives us a O(n) efficiency. Space is a bit tricky we are creating lists for each method, O(1) and thats not counting the actually node or tree it self.
 
 ## API
+### Binary Tree (Super Class)
 `pre_order()`: This is a Depth First traversal method. It prioritizes printing the `root` first, then looks to print `left` if left is not `None`, and lastly looks `right`.
 
 `in_order()`: This is a Depth First traversal method. It prioritizes printing the `left` first, then prints the `root`, and lastly looks to print `right`.
 
 `post_order()`: This is a Depth First traversal method. It prioritizes print the `left` first, then looks to print the `right` and lastly prints the `root`.
+
+### BinarySearchTree
+`add(value)`: This will add a new element to the tree, based on a tradtional binary search tree condtional. If value is smaller than the root it will be added to the left, else add to the right.
+
+`contains(value)`: This searches the tree in order to verify that a given value exists in the tree. Returns a boolean value.
 
 ## Solution
 ![White Board Image](../../../assets/tree.png)
