@@ -1,7 +1,7 @@
 # Implementation: Trees
 [Table of Contents](../../../README.md)
 ## Challenge 15
-This challenge address the datastruce of trees. We will be working with Binary Trees and Binary Search Trees. We will create methods that will traverse through these trees and do several operations.
+This challenge address the datastruce of trees. We will be working with Binary Trees and Binary Search Trees. We will create methods that will traverse through these trees and do several operations..
 
 ## Features
 - [x] Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
