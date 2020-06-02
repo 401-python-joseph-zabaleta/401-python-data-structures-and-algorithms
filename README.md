@@ -15,3 +15,4 @@ This is a collection of all my challenges for Python 401.
 - [Code Challenge 10: Stacks and Queues](dsa/data_structures/stack_and_queues/README.md)
 - [Code Challenge 11: Queue with Stacks](dsa/challenges/queue_with_stacks/README.md)
 - [Code Challenge 12: Fifo Animal Shelter](dsa/challenges/fifo_animal_shelter/README.md)
+- [Code Challenge 13: Multi Bracket Validation](dsa/challenges/multi_bracket_validation/README.md)
