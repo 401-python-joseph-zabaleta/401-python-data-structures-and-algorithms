@@ -17,4 +17,5 @@ This is a collection of all my challenges for Python 401.
 - [Code Challenge 12: Fifo Animal Shelter](dsa/challenges/fifo_animal_shelter/README.md)
 - [Code Challenge 13: Multi Bracket Validation](dsa/challenges/multi_bracket_validation/README.md)
 - Challenge 14: Mock Interview (White board exercise)
+- [Code Challenge 15: Trees](dsa/data_structures/tree/README.md)
 - [Code Challenge 16: FizzBuzz](dsa/challenges/fizz_buzz_tree/README.md)
