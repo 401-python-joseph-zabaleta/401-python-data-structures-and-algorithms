@@ -1,5 +1,5 @@
 import pytest
-from dsa.challenges.tree_expanded.tree_expanded import (
+from dsa.challenges.tree_expanded_breadth_first.tree_expanded_breadth_first import (
     BinaryTree,
     BinarySearchTree
 )

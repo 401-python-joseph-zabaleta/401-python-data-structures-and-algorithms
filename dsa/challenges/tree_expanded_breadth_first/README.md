@@ -1,4 +1,4 @@
-# Implementation: Tree Expanded
+# Implementation: Tree Expanded: Breadth Frist
 [Table of Contents](../../../README.md)
 ## Challenge 17
 Expansion of Tree to include a breadth first traversal
