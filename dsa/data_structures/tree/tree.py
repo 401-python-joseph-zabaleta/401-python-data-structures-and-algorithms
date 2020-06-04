@@ -51,7 +51,7 @@ class BinaryTree:
 
             # right >>>
             if root.left == None and root.right == None:
-                collections.append(root.value)
+                collection.append(root.value)
                 return
             else:
                 walk(root.right)
@@ -79,7 +79,7 @@ class BinaryTree:
 
             # right >>>
             if root.left == None and root.right == None:
-                collections.append(root.value)
+                collection.append(root.value)
                 return
             else:
                 walk(root.right)
