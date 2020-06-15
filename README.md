@@ -19,4 +19,6 @@ This is a collection of all my challenges for Python 401.
 - Challenge 14: Mock Interview (White board exercise)
 - [Code Challenge 15: Trees](dsa/data_structures/tree/README.md)
 - [Code Challenge 16: FizzBuzz](dsa/challenges/fizz_buzz_tree/README.md)
-- [Code Challenge 17: Tree Expanded](dsa/chllenges/tree_expanded/README.md)
+- [Code Challenge 17: Tree Expanded: Breadth First](dsa/chllenges/tree_expanded_breadth_first/README.md)
+- [Code Challenge 18: Tree Expanded: Find Maximum](dsa/challenges/tree_expanded_find_maximum/README.md)
+
