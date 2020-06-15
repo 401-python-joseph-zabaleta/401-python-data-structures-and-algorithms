@@ -3,6 +3,8 @@
 ## Challenge 26
 Based on this pseudo code below make a blog walking through the code. Then create a working solution with tests.
 
+Checkout the blog here: [Blog Link](./BLOG.md)
+
 PSUEDO CODE:
 ```py
     InsertionSort(int[] arr)
@@ -30,9 +32,9 @@ PSUEDO CODE:
 |`[2,3,5,7,13,11]`|`[2, 3, 5, 7, 11, 13]`|
 
 ### Unit Tests
-1. [ ] Sort an inputed list that is already Reverse-sorted: `[20, 18, 12, 8, 5, -2]`
-2. [ ] Sort an inputed list that has a few uniques: `[5,12,7,5,5,7]`
-3. [ ] Sort an inputed list that is nearly sorted: `[2,3,5,7,13,11]`
+1. [x] Sort an inputed list that is already Reverse-sorted: `[20, 18, 12, 8, 5, -2]`
+2. [x] Sort an inputed list that has a few uniques: `[5,12,7,5,5,7]`
+3. [x] Sort an inputed list that is nearly sorted: `[2,3,5,7,13,11]`
 
 ## Approach & Efficiency
 
