@@ -5,7 +5,7 @@ Based on this pseudo code below make a blog walking through the code. Then creat
 
 Checkout the blog here: [Blog Link](./BLOG.md)
 
-PSUEDO CODE:
+PSEUDO CODE:
 ```py
     InsertionSort(int[] arr)
 
@@ -37,7 +37,9 @@ PSUEDO CODE:
 3. [x] Sort an inputed list that is nearly sorted: `[2,3,5,7,13,11]`
 
 ## Approach & Efficiency
-
+This functions basic operations is to compare each index of a list and re-order them based on value. In order to do this we start off with a for loop, O(N). We loop through a the range of the inputed list and for each one we check to see if a condition is met for a while loop. This while loop can run O(n) times as it will continue to move a value as long as its the smaller value in the comparision. This results in O(n^2) time. Space is never change, leaving us with O(1) as the list is changed in place, and no new space is required.
 
 ## Solution
-![White Board Image]()
+Checkout the blog for more visual pictures: [Blog Link](./BLOG.md)
+
+![White Board Image](../../../assets/insertion_sort/insertion_sort.png)

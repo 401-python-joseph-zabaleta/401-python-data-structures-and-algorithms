@@ -1,6 +1,8 @@
 # Insertion Sort
 Insertion Sort is a sorting algorithm that traverses the list multiple times as it slowly builds out the sorting sequence. The traversal keeps track of the minimum value and places it in the front of the list which should be incrementally sorted.
 
+Checkout official README: [README Link](./README.md)
+
 ---
 
 ## Pseudocode
