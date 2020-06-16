@@ -55,14 +55,14 @@ PSEUDO CODE:
 |`[2,3,5,7,13,11]`|`[2, 3, 5, 7, 11, 13]`|
 
 ### Unit Tests
-1. [ ] Sort an inputed list that is already Reverse-sorted: `[20, 18, 12, 8, 5, -2]`
-2. [ ] Sort an inputed list that has a few uniques: `[5,12,7,5,5,7]`
-3. [ ] Sort an inputed list that is nearly sorted: `[2,3,5,7,13,11]`
+1. [x] Sort an inputed list that is already Reverse-sorted: `[20, 18, 12, 8, 5, -2]`
+2. [x] Sort an inputed list that has a few uniques: `[5,12,7,5,5,7]`
+3. [x] Sort an inputed list that is nearly sorted: `[2,3,5,7,13,11]`
 
 ## Approach & Efficiency
-
+The approach to merge sort, is that given a list we split the list into halves. We continue to split the lists in half until the length of 1 is reached, then we begin to merge them back together based on value. Time complexity for this type of function results in O(log(n)) since it is similiary to a binary tree, continually splitting on it self. Space however remains unchanged. Yes we split the lists each time, but we are not adding too the lists, so the size never changes, and in the end, we take up the same amount of space it had before. Since we split a list down to single elements, we get a space complexity of O(n) but then as we merge this list back together, we return to the original list space.
 
 ## Solution
 Checkout the blog for more visual pictures: [Blog Link](./BLOG.md)
 
-![White Board Image](../../../assets/insertion_sort/merge_sort.png)
+![White Board Image](../../../assets/merge_sort/merge_sort.png)
