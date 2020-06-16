@@ -1,5 +1,5 @@
 # Insertion Sort
-Insertion Sort is a sorting algorithm that traverses the list multiple times as it slowly builds out the sorting sequence. The traversal keeps track of the minimum value and places it in the front of the list which should be incrementally sorted.
+Insertion Sort is a sorting algorithm that traverses the list multiple times as it slowly builds out the sorting sequence. During this traversal it will compare two indices at a time, and if the right index is smaller than the left, they will swap positions. This continues until the right index is larger and then it moves on the next interation of the loop. At the end the list is sorted from small to large.
 
 Checkout official README: [README Link](./README.md)
 
