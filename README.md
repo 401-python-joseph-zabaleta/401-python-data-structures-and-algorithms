@@ -24,3 +24,4 @@ This is a collection of all my challenges for Python 401.
 - Challenge 19: Mock Interview (White board exercise)
 - [Code Challenge 26: Insertion Sort](dsa/challenges/insertion_sort/README.md)
 - [Code Challenge 27: Merge Sort](dsa/challenges/merge_sort/README.md)
+- [Code Challenge 28: Quick Sort](dsa/challenges/quick_sort/README.md)
