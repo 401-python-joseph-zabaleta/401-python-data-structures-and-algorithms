@@ -33,4 +33,4 @@ def test_nearly_sorted_array():
     right = len(alist) - 1
     quick_sort(alist, left, right)
     expected = [2, 3, 5, 7, 11, 13]
-    assert alist == expected
+    assert alist == expected5

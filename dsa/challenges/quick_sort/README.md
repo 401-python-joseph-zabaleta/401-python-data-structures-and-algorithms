@@ -60,7 +60,11 @@ ALGORITHM Swap(arr, i, low)
 3. [] Sort an inputed list that is nearly sorted: `[2,3,5,7,13,11]`
 
 ## Approach & Efficiency
+Time O(n)
+- The basic algorithm for Quick Sort is to partition the list based ona pivot value, and utilizing recursion to break this list down sorting smaller numbers to the left of the pivot and larger numbers to the right. First time through a position is deteremined, and then recursion on main function is called to sort the left then the right based on exact pivot location. This will result in a O(n) performance as we are touching each part, utilzing a for loop.
 
+Space O(n)
+- The space can vary based on the type of quick sort used, in this version of quick sort we have a set pivot over a random pivot. Now the best space complexity still is O(n) as the fixed pivot could be the lowest number.
 
 ## Solution
 Checkout the blog for more visual pictures: [Blog Link](./BLOG.md)
