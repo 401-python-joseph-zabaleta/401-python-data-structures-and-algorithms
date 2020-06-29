@@ -30,3 +30,5 @@ This is a collection of all my challenges for Python 401.
 - [Code Challenge 31: Repeaded Word](dsa/challenges/repeated_word/README.md)
 - [Code Challenge 32: Tree Intersection](dsa/challenges/tree_intersection/README.md)
 - [Code Challenge 33: Left Join](dsa/challenges/left_join/README.md)
+- Challenge 29: Mock Interview (White board exercise)
+- [Code Challenge 35](dsa/data_structures/graph/README.md)
