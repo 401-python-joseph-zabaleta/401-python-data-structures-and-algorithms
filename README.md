@@ -33,3 +33,4 @@ This is a collection of all my challenges for Python 401.
 - Challenge 29: Mock Interview (White board exercise)
 - [Code Challenge 35: Graph](dsa/data_structures/graph/README.md)
 - [Code Challenge 36: Breadth-first Traversal on a Graph](dsa/challenges/breadth_first/README.md)
+- [Code Challenge 37: Get-Edges of a Graph](dsa/challenges/get_edges/README.md)
