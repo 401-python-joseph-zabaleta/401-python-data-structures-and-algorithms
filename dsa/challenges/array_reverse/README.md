@@ -15,6 +15,8 @@ Write a function called `reverseArray` which takes an array as an argument. With
 ## Approach & Efficiency
 Still learning about the Big O Notation. In this challenge I am not really sure what Big O is really about but I utilized only one loop. I only ever needed to touch each index once and the list was mutated in place..
 
+The approach of using list slicing brings a time complexity of O(N) as N is the number of items within the given list. Space complexity can be thought about as it will generate a new list in reversed order.
+
 
 ## Solution
 ![White Board Image](../../../assets/array_reverse.png)
